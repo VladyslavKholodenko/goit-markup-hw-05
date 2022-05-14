@@ -92,10 +92,12 @@ ul{
   margin-right: 50px;
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link .nav-link {
   padding-top: 32px;
   padding-bottom: 32px;
+  
 }
 
 .current {
@@ -132,6 +134,10 @@ ul{
 
 .nav-link:hover::after{
   opacity: 1;
+  
+}
+.nav-link:focus::after{
+  opacity: 1;
 }
 
 
@@ -144,6 +150,7 @@ ul{
 .nav-link:hover,
 .nav-link:focus {
   color: #2196f3;
+  
 }
 .mail-tel-link {
 margin-right: 30px;
@@ -160,6 +167,7 @@ margin-right: 30px;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-tel-root:last-child {
@@ -441,6 +449,7 @@ border-bottom: 1px solid #ECECEC;
   border: 0;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
+  
 
 }
 
@@ -448,6 +457,7 @@ border-bottom: 1px solid #ECECEC;
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  
 }
 
 .list-button-name:focus {
@@ -550,11 +560,14 @@ justify-content: center;
   height: 44px;
   border-radius: 50px;
   color: #AFB1B8;
-  background-color: #FFFFFF
-  
-  
+  background-color: #FFFFFF;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-social:hover {
+  color: #FFFFFF;
+  background-color: #2196f3;
+}
+.icon-social:focus {
   color: #FFFFFF;
   background-color: #2196f3;
 }
@@ -591,19 +604,18 @@ border-radius: 4px;
 display: flex;
 justify-content: center;
 align-items: center;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-border:hover {
-color: #2196f3;
-}
+.logo-border:hover, .logo-border:focus {
+  color: #2196f3;
+  }
+  
 .info-box {
   margin-right: 70px;
 }
 .footer-box {
 display: flex;
 align-items: baseline;
-padding-top: 48px;
-padding-bottom: 28px;
-border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .subscribe {
 display: block;
